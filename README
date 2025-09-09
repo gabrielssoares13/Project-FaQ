@@ -1,0 +1,53 @@
+# TechNova FAQ Page
+
+Este é um projeto fictício de uma página de FAQ (Perguntas Frequentes) para a empresa TechNova, que oferece soluções tecnológicas inovadoras. A página apresenta um componente interativo que permite expandir e fechar as respostas ao clicar nas perguntas.
+
+---
+
+## Funcionalidades
+
+- Lista de perguntas frequentes com respostas ocultas inicialmente.
+- Ao clicar em uma pergunta, a resposta correspondente é exibida ou ocultada com uma animação suave.
+- Ícone de seta que gira para indicar o estado expandido ou recolhido da resposta.
+- Design responsivo e moderno utilizando TailwindCSS.
+- Página única, simples e fácil de customizar.
+
+---
+
+## Tecnologias Utilizadas
+
+- **HTML5** para a estrutura da página.
+- **TailwindCSS** para estilização rápida e responsiva.
+- **JavaScript Vanilla** para a lógica de expandir/fechar as respostas.
+
+---
+
+## Como usar
+
+1. Clone ou baixe este repositório.
+2. Abra o arquivo `index.html` em seu navegador preferido.
+3. Clique nas perguntas para expandir ou fechar as respostas.
+
+---
+
+## Personalização
+
+- Para adicionar novas perguntas, duplique um bloco `.faq-item` no HTML e altere o texto da pergunta e da resposta.
+- Para alterar o estilo, modifique as classes TailwindCSS ou adicione CSS customizado no arquivo HTML.
+- Para alterar o comportamento da expansão, edite o script JavaScript no final do arquivo.
+
+---
+
+## Licença
+
+Este projeto é fictício e criado para fins educacionais. Sinta-se à vontade para usar e modificar conforme desejar.
+
+---
+
+## Contato
+
+Para dúvidas ou sugestões, entre em contato com a equipe TechNova fictícia através do e-mail: suporte@technova.com
+
+---
+
+Obrigado por visitar a página TechNova FAQ!
