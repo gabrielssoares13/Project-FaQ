@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova FAQ - Suas Perguntas Técnicas Respondidas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth transition for expanding/collapsing */
+        .faq-answer {
+            transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            padding: 0;
+        }
+        .faq-answer.expanded {
+            max-height: 500px; /* Adjust based on content */
+            opacity: 1;
+            padding: 1rem;
+        }
+        /* Custom gradient background for uniqueness */
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="hero-bg text-white py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">TechNova FAQ</h1>
+            <p class="text-lg md:text-xl">Encontre respostas para suas perguntas mais comuns sobre nossas soluções tecnológicas inovadoras. Se você não encontrar o que está procurando, nossa equipe de suporte está aqui para ajudar!</p>
+        </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto py-12 px-4">
+        <div id="faq-container" class="space-y-4">
+            <div class="faq-item bg-white rounded-lg shadow-md">
+                <div class="faq-question cursor-pointer p-6 text-lg font-semibold text-gray-800 hover:bg-gray-50 transition-colors duration-200">
+                    O que é a TechNova e o que vocês oferecem?
+                    <span class="float-right transform transition-transform duration-200" id="toggle-1">&#9660;</span>
+                </div>
+                <div class="faq-answer text-gray-700">
+                    A TechNova é uma fornecedora líder de ferramentas de software inovadoras impulsionadas por IA, projetadas para otimizar a produtividade nos negócios. Nossas ofertas incluem plataformas SaaS personalizadas, bots de automação e suítes de análise de dados adaptadas para empresas e startups.
+                </div>
+            </div>
+
+            <div class="faq-item bg-white rounded-lg shadow-md">
+                <div class="faq-question cursor-pointer p-6 text-lg font-semibold text-gray-800 hover:bg-gray-50 transition-colors duration-200">
+                    Como posso começar a usar seus serviços?
+                    <span class="float-right transform transition-transform duration-200" id="toggle-2">&#9660;</span>
+                </div>
+                <div class="faq-answer text-gray-700">
+                    Para começar, basta visitar nosso site e se inscrever para um teste gratuito. Nossa equipe de integração irá guiá-lo durante o processo de configuração, incluindo a integração com seus sistemas existentes. Não é necessário conhecimento em programação!
+                </div>
+            </div>
+
+            <div class="faq-item bg-white rounded-lg shadow-md">
+                <div class="faq-question cursor-pointer p-6 text-lg font-semibold text-gray-800 hover:bg-gray-50 transition-colors duration-200">
+                    Os meus dados estão seguros com a TechNova?
+                    <span class="float-right transform transition-transform duration-200" id="toggle-3">&#9660;</span>
+                </div>
+                <div class="faq-answer text-gray-700">
+                    Absolutamente. A segurança é nossa principal prioridade. Empregamos criptografia padrão do setor, auditorias regulares e conformidade com as regulamentações GDPR e CCPA. Seus dados são armazenados em servidores seguros e geograficamente redundantes com monitoramento 24/7.
+                </div>
+            </div>
+
+            <div class="faq-item bg-white rounded-lg shadow-md">
+                <div class="faq-question cursor-pointer p-6 text-lg font-semibold text-gray-800 hover:bg-gray-50 transition-colors duration-200">
+                    Quais opções de preços vocês têm?
+                    <span class="float-right transform transition-transform duration-200" id="toggle-4">&#9660;</span>
+                </div>
+                <div class="faq-answer text-gray-700">
+                    Oferecemos faixas de preços flexíveis a partir de R$ 29/mês para planos básicos, escalando até cotações personalizadas para empresas. Todos os planos incluem uma garantia de devolução do dinheiro em 30 dias e suporte contínuo.
+                </div>
+            </div>
+
+            <div class="faq-item bg-white rounded-lg shadow-md">
+                <div class="faq-question cursor-pointer p-6 text-lg font-semibold text-gray-800 hover:bg-gray-50 transition-colors duration-200">
+                    Posso integrar a TechNova com outras ferramentas?
+                    <span class="float-right transform transition-transform duration-200" id="toggle-5">&#9660;</span>
+                </div>
+                <div class="faq-answer text-gray-700">
+                    Sim! Nossa plataforma suporta integrações perfeitas com ferramentas populares como Slack, Salesforce, Zapier e mais. Nossa API é totalmente documentada para integrações personalizadas, facilitando a conexão com seu fluxo de trabalho.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all FAQ questions
+        const questions = document.querySelectorAll('.faq-question');
+        
+        questions.forEach((question, index) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const toggleIcon = question.querySelector('.float-right');
+                
+                // Toggle the answer visibility
+                answer.classList.toggle('expanded');
+                
+                // Rotate the arrow icon for visual feedback
+                toggleIcon.style.transform = answer.classList.contains('expanded') ? 'rotate(180deg)' : 'rotate(0deg)';
+            });
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
